@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosmos-Surg-dVRK</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Noto+Sans:400,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      line-height: 1.6;
+      color: #2c3e50;
+      background-color: #ffffff;
+    }
+
+    .hero {
+      background: #ffffff;
+      color: #2c3e50;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .publication-title {
+      font-family: 'Google Sans', sans-serif;
+      font-weight: 700;
+      color: #2c3e50 !important;
+      text-shadow: none;
+      line-height: 1.25;
+    }
+
+    .publication-authors,
+    .publication-affiliations {
+      font-family: 'Google Sans', sans-serif;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    .author-block {
+      display: inline-block;
+      margin: 0.15rem 0.35rem;
+      font-size: 1.1rem;
+    }
+
+    .publication-affiliations .author-block {
+      color: #7f8c8d;
+      font-size: 1.05rem;
+    }
+
+    .equal-contrib {
+      color: #7f8c8d;
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+
+    .publication-links {
+      margin-top: 2rem;
+    }
+
+    .link-block {
+      margin: 0.5rem;
+    }
+
+    .link-block a.button {
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .link-block a.button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-video {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .hero-video figure {
+      margin: 0 auto;
+    }
+
+    .hero-video video {
+      width: 100%;
+      height: auto;
+      max-width: 1200px;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+      object-fit: contain;
+    }
+
+    .hero-video figcaption {
+      margin-top: 1rem;
+      color: #7f8c8d;
+      font-size: 1rem;
+    }
+
+    .section {
+      padding: 3rem 1.5rem;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    .media-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .media-card video {
+      border-radius: 10px;
+      width: 100%;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .media-card video:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-caption {
+      margin-top: 0.75rem;
+      font-weight: 600;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .video-description {
+      color: #7f8c8d;
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    footer.footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem 0;
+    }
+
+    footer.footer a {
+      color: #5dade2;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 2.5rem 1.2rem;
+      }
+
+      .publication-title {
+        font-size: 2.1rem;
+      }
+
+      .author-block {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#home">
+        <strong>Cosmos-Surg-dVRK</strong>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#demo">Overview</a>
+        <a class="navbar-item" href="#abstract">Abstract</a>
+        <a class="navbar-item" href="#methodology">Methodology</a>
+        <a class="navbar-item" href="#experiments">Experiments</a>
+        <a class="navbar-item" href="#simulation">Examples</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              Cosmos-Surg-dVRK:<br />
+              World foundation model-based automated online evaluation of surgical robot policy learning
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Lukas Zbinden*<sup>1</sup></span>
+              <span class="author-block">Nigel Nelson*<sup>1</sup></span>
+              <span class="author-block">Juo-Tung Chen<sup>2</sup></span>
+              <span class="author-block">Xinhao Chen<sup>2</sup></span>
+              <span class="author-block">Ji Woong (Brian) Kim<sup>2,3</sup></span>
+              <span class="author-block">Mahdi Azizian<sup>1</sup></span>
+              <span class="author-block">Axel Krieger<sup>2</sup></span>
+              <span class="author-block">Sean Huver<sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-affiliations">
+              <span class="author-block"><sup>1</sup>NVIDIA</span>
+              <span class="author-block"><sup>2</sup>Johns Hopkins University</span>
+              <span class="author-block"><sup>3</sup>Stanford University</span>
+            </div>
+
+            <p class="equal-contrib">*Equal contribution</p>
+
+            <!-- Institution Logos -->
+            <div class="institution-logos" style="margin: 1.5rem 0; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+              <img src="./assets//nvidia_logo.jpg" alt="NVIDIA" style="height: 35px !important; width: auto !important; opacity: 1;" />
+              <img src="./assets/jhu_logo.jpg" alt="Johns Hopkins University" style="height: 35px !important; width: auto !important; opacity: 1;" />
+              <img src="./assets//logo_stanford.jpeg" alt="Stanford University" style="height: 35px !important; width: auto !important; opacity: 1;" />
+            </div>
+
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2510.16240" class="button is-normal is-rounded is-dark" target="_blank" rel="noopener">
+                  <span class="icon"><i class="fa-solid fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2510.16240" class="button is-normal is-rounded is-dark" target="_blank" rel="noopener">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="demo">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">System Overview</h2>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-centered">
+            <video controls autoplay loop muted style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <source src="video/Cosmos-Surg-dVRK-animation.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p class="subtitle is-6 has-text-centered" style="margin-top: 0.75rem;">
+              Online evaluation of surgical robot policies in Cosmos-Surg-dVRK simulation.<br />
+              We propose a framework for automated policy evaluation using Cosmos-Surg-dVRK, a Cosmos world foundation model (WFM) finetune, to perform simulated surgical policy rollouts and subsequent automated success rate evaluation using a video classifier.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Abstract</h2>
+          <div class="content is-size-5 has-text-justified">
+            <p>
+              The rise of surgical robots and vision-language-action models has accelerated the development of autonomous surgical policies and efficient assessment strategies. However, evaluating these policies directly on physical robotic platforms such as the da Vinci Research Kit (dVRK) remains hindered by high costs, time demands, reproducibility challenges, and variability in execution.
+            </p>
+            <p>
+              World foundation models (WFM) for physical AI offer a transformative approach to simulate complex real-world surgical tasks, such as soft tissue deformation, with high fidelity. This work introduces Cosmos-Surg-dVRK, a surgical finetune of the Cosmos WFM, which, together with a trained video classifier, enables fully automated online evaluation and benchmarking of surgical policies.
+            </p>
+            <p>
+              We evaluate Cosmos-Surg-dVRK using two distinct surgical datasets. On tabletop suture pad tasks, the automated pipeline achieves strong correlation between online rollouts in Cosmos-Surg-dVRK and policy outcomes on the real dVRK Si platform, as well as good agreement between human labelers and the V-JEPA 2-derived video classifier. Additionally, preliminary experiments with ex-vivo porcine cholecystectomy tasks in Cosmos-Surg-dVRK demonstrate promising alignment with real-world evaluations, highlighting the platform's potential for more complex surgical procedures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="methodology">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+          <div class="content is-size-5 has-text-justified">
+          <h2 class="title is-3 has-text-centered">Methodology</h2>
+          <h3 class="title is-4">Overview of Approach</h3>
+          <p>
+            Given a collection of multi-task surgical policies, represented either by distinct models or by different training regimes, this study aims to benchmark their success rate via online rollouts in simulation, thereby eliminating the need for immediate evaluation on a physical robot platform. The objective is to identify the policy exhibiting the highest simulated performance prior to deployment on the physical robot. To assess the validity of the Cosmos-Surg-dVRK simulation framework, a set of policies are trained first and then evaluated on the dVRK Si platform, recording both the robot’s initial state (captured as the first video frame) and the observed success or failure for each policy rollout. Subsequently, these same policies are rolled out online in the Cosmos-Surg-dVRK environment, using the recorded initial states from the dVRK Si as standardized starting conditions. The success rates attained in both the simulation and physical settings are then compared through statistical analysis to determine the fidelity of the simulation framework in replicating real-world performance.
+          </p>
+          <h3 class="title is-4">V-JEPA 2 and Attentive Probing: Automated Policy Rollout Evaluation</h3>
+          <p>
+            While Cosmos-Surg-dVRK generates complete videos for each policy rollout, facilitating manual
+evaluation, reviewing hundreds of videos remains a time-consuming process, particularly when distinguishing
+subtle decision boundaries between success and failure. As such, we utilize V-JEPA 2 (Assran et al., 2025) 
+for its strong pretrained video features and train an attentive probe classifier
+to automatically label success and failure events on our Cosmos-Surg-dVRK rollouts. We train
+a single classifier for all tabletop tasks using a frozen V-JEPA 2 ViT-H backbone on a manually
+collected dataset of 2,310 video clips. To accommodate V-JEPA 2’s limited context window, we
+process each rollout in overlapping video chunks. Then, the complete rollout is labeled as a success
+or failure based on whichever of those outcomes appears first.
+          </p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experiments">
+    <div class="container is-max-desktop">
+      <div class="content is-size-5 has-text-justified">
+        <h2 class="title is-3 has-text-centered">Experiments</h2>
+        <p>
+          We conduct a series of experiments using Cosmos-Surg-dVRK to assess its validity as a surrogate for the real dVRK Si robotic platform. Our central hypothesis is that policy evaluations performed in simulation can reliably serve as linear predictors of corresponding real-world policy performance.
+        </p>
+        <div class="content is-size-5 has-text-justified" style="margin-top: 2.5rem;">
+          <h3 class="title is-4">Datasets</h3>
+          <p>
+            All datasets were recorded at 30Hz on a single dVRK Si system across multiple sessions and expert operators. The dVRK Si movements were recorded as multi-view video, 
+            including endoscope and wrist-camera views, as well as the time-synchronized kinematic sequences. The tabletop suture pad dataset (Haworth et al., 2025) contains 
+            four surgical tasks and encompasses 3,036 episodes with a duration of ∼13 hours. The porcine cholecystectomy dataset (Kim et al., 2025) 
+            contains 17 sub-tasks and includes 16,506 episodes with a duration of ∼18 hours. For pre-processing, we drop redundant consecutive video frames and respective kinematics.
+          </p>
+          <div class="columns is-variable is-6 is-multiline">
+            <div class="column is-half">
+              <figure>
+                <img src="assets/tabletop_dataset_nested_donut.png" alt="Tabletop surgical tasks distribution" />
+                <figcaption class="subtitle is-6 has-text-centered" style="margin-top: 0.75rem;">
+                  Tabletop surgical tasks
+                </figcaption>
+              </figure>
+            </div>
+            <div class="column is-half">
+              <figure>
+                <img src="assets/chole_dataset_nested_donut.png" alt="Ex-vivo porcine cholecystectomy distribution" />
+                <figcaption class="subtitle is-6 has-text-centered" style="margin-top: 0.75rem;">
+                  Ex-vivo porcine cholecystectomy
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="content is-size-5 has-text-justified" style="margin-top: 2.5rem;">
+          <h3 class="title is-4">Results: Tabletop Surgical Tasks</h3>
+          <p>
+            We train three different monocular VLAs (policies), π0, GR00T N1, and GR00T N1.5, on the dVRK
+tabletop dataset. For each policy, we evaluate two training regimes, one half training and one full
+training, using a) Cosmos-Surg-dVRK simulation and b) the real dVRK Si. For each policy checkpoint
+and environment, the success rate for each surgical task is calculated. The surgical tasks are
+needle pickup, needle handover, needle throw, and knot tying. Each policy is rolled out in both
+environments ten times per task (ten trials), each time with a different initial robot state. For each
+dVRK rollout, a multi-view video with paired kinematics is recorded. The corresponding Cosmos-
+Surg-dVRK rollout is initialized with the first endoscopic video frame from the dVRK Si recording.
+          </p>
+          <p>
+            <i>Manual evaluation of policy rollouts:</i> The success rates are determined manually both for the dVRK and the Cosmos-Surg-dVRK generated
+videos. For the generated videos, two raters each label three Cosmos-Surg-dVRK seeds and
+their averaged scores are collected as the final success rate.
+</p>
+<p>
+<i>Automated evaluation of policy rollouts:</i> We generate the V-JEPA 2 classifier labels by running 
+inference on the same set of Cosmos-Surg-dVRK
+policy rollout videos used in the manual evaluation. For our final V-JEPA 2 evaluations, we average
+results for each policy-task combination across three generated seeds, following the same procedure
+as with the human labeling.
+</p>
+<p>
+Qualitative examples are shown in section <a href="#simulation">Example policy rollouts in Cosmos-Surg-dVRK</a>.
+          </p>
+          <div class="columns is-variable is-6 is-multiline">
+            <div class="column is-half">
+              <figure>
+                <img src="assets/human_vs_dvrk.png" alt="Manual Cosmos-Surg-dVRK vs. real-world tabletop success rates" />
+                <figcaption class="subtitle is-6 has-text-centered" style="margin-top: 0.75rem;">
+                  Manual Cosmos-Surg-dVRK vs. real-world tabletop success rates
+                </figcaption>
+              </figure>
+            </div>
+            <div class="column is-half">
+              <figure>
+                <img src="assets/automated_vs_dvrk.png" alt="Automated Cosmos-Surg-dVRK vs. real-world tabletop success rates" />
+                <figcaption class="subtitle is-6 has-text-centered" style="margin-top: 0.75rem;">
+                  Automated Cosmos-Surg-dVRK vs. real-world tabletop success rates
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="content is-size-5 has-text-justified" style="margin-top: 2.5rem;">
+          <h3 class="title is-4" id="results-exvivo">Results: Ex-Vivo Porcine Cholecystectomy</h3>
+          <p>
+            Using the monocular version of the SRT-H policy (Kim et al., 2025), we compare its performance in
+Cosmos-Surg-dVRK simulation with the real dVRK. The holdout test set has nine different porcine
+tissues and three tasks are performed, “apply first clip”, “apply third clip”, and “cut the cystic duct”.
+Each task has three trials, and as a consequence, we report majority-vote outcomes to ensure robustness
+to outlier judgments. This contrasts with the tabletop experiments, where the ten real-world
+trials enable us to report the average success rate, as the tabletop experiments’ larger sample size allows stable statistical estimation. Thus, for the cholecystectomy experiments, each trial is rolled out
+three times using different seeds for Cosmos-Surg-dVRK. The generated videos are manually rated
+by two raters. Each trial is counted as a success if more than 50% of the six labels are successful.
+A physics anomaly is counted as a failure only if it occurs as a proxy for poor policy action.
+          </p>
+          <p>
+            The exploratory results are summarized in Table 1. We obtain an almost identical success rate overlap across nine trials. The causes of failure in the third 
+            rollout of the task “apply third clip” using Cosmos-Surg-dVRK include the scissor missing the duct or grabbing and cutting the wrong tube. 
+          </p>
+          <p>            
+            Qualitative examples are shown in section <a href="#simulation">Example policy rollouts in Cosmos-Surg-dVRK</a>.
+          </p>
+
+        </div>
+        <div class="content is-size-5 has-text-justified" style="margin-top: 2rem;">
+          <table class="table is-fullwidth is-striped is-hoverable">
+            <thead>
+              <tr>
+                <th>System</th>
+                <th>Apply first clip</th>
+                <th>Apply third clip</th>
+                <th>Cut cystic duct</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>dVRK (real-world)</td>
+                <td>3 / 3</td>
+                <td>2 / 3</td>
+                <td>2 / 3</td>
+                <td>7 / 9</td>
+              </tr>
+              <tr>
+                <td>Cosmos-Surg-dVRK</td>
+                <td>3 / 3</td>
+                <td>3 / 3</td>
+                <td>2 / 3</td>
+                <td>8 / 9</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="subtitle is-6 has-text-centered" style="margin-top: 0.75rem;">
+            Table 1: SRT-H policy success rates on three cholecystectomy tasks.
+          </p>
+        </div>
+        <div class="content is-size-5 has-text-justified" style="margin-top: 2.5rem;">
+          <h3 class="title is-4">On The Importance of Failure Episodes</h3>
+          <p>
+            Initially, we finetune Cosmos-Surg-dVRK on datasets containing only successful trajectories. Qualitatively,
+these models show a strong positive bias, often hallucinating false positives. We therefore
+hypothesize that including negative examples could mitigate this bias. To test this, we collect additional
+trajectories resulting in task failure and subsequently train two model variants on the tabletop surgical tasks: an
+ablated model on successes only, and a full model on both successes and failures.
+          </p>
+          <p>
+            Evaluations between these two finetunes are performed on holdout data unseen by both models.
+For each task and policy, two raters independently label 10 unique rollouts generated from a single
+seed, with the final success rate being the average of their assessments. Across all tasks and metrics, the ablated Cosmos-Surg-dVRK without failure episodes
+yields lower performance. The figure below visualizes the positive shift in higher success rates between the Cosmos-Surg-dVRK without
+failure episodes version and the full Cosmos-Surg-dVRK full version. The ablated Cosmos-
+Surg-dVRK model exhibits a markedly larger positive mean bias error, and limits of agreement that
+are shifted upward compared to the full Cosmos-Surg-dVRK model.
+</p>
+<p>
+Our findings suggest that failure episodes represent a critical factor in surgical
+datasets for effective world model finetuning in surgical simulation.
+          </p>
+          <div class="columns is-centered" style="margin-top: 1.5rem;">
+            <div class="column is-two-thirds">
+              <figure>
+                <img src="assets/bland_altman_cosmos_vs_nofail_decimal.png" alt="Bland–Altman analysis of Cosmos-Surg-dVRK vs. ablation without failure episodes" />
+                <figcaption class="subtitle is-6 has-text-centered" style="margin-top: 0.75rem;">
+                  Bland–Altman analysis comparing Cosmos-Surg-dVRK with and without failure episodes.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="simulation">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Example policy rollouts in Cosmos-Surg-dVRK</h2>
+
+      <div class="content">
+        <h3 class="title is-4">Tabletop Suture Pad</h3>
+        <p class="subtitle is-5 video-description">
+          Sample online rollouts of the monocular version of the GR00T N1 policy (NVIDIA et al., 2025).
+        </p>
+      </div>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/tt/knot_tie.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">Knot Tie</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/tt/pickup_and_handover.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">Pickup And Handover</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/tt/throw_and_extraction.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">Throw And Extraction</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" style="margin-top: 2.5rem;">
+        <h3 class="title is-4">Ex-Vivo Porcine Cholecystectomy</h3>
+        <p class="subtitle is-5 video-description">
+          Sample online rollouts of the monocular version of the SRT-H policy (Kim et al., 2025).
+        </p>
+      </div>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/chole/tasks/apply_first_clip.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">Apply First Clip</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/chole/tasks/apply_third_clip.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">Apply Third Clip</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/chole/tasks/cut_cystic_duct.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">Cut Cystic Duct</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" style="margin-top: 2.5rem;">
+        <h3 class="title is-4">Cosmos-Surg-dVRK as a Surgical Simulator</h3>
+        <p class="subtitle is-5 video-description">
+          Sample handcrafted trajectory rollouts unseen during training ("wild kinematics").
+        </p>
+      </div>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/chole/ood/OOD_example_1.mp4" type="video/mp4" />
+            </video>
+            <!-- cosmos_wild_kinematics_20251015_114842.log -->
+            <!-- 2B_run_20251015_114848_generated_jhu_episode_33011_14_clipping_third_clip_right_tube_recovery_original_video_repeat_action_custom.mp4-->
+            <p class="video-caption">Left Arm ⬅️ x252<br>(Pull gallbladder to the left)</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/chole/ood/OOD_example_2.mp4" type="video/mp4" />
+            </video>
+            <!-- cosmos_wild_kinematics_20251007_084335.log -->
+            <!-- 2B_run_20251007_084342_generated_jhu_episode_33011_14_clipping_third_clip_right_tube_recovery_video_repeat_action_14-->
+            <p class="video-caption">Right Arm ⬅️ x252<br>(Push cystic duct to the left)</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="media-card">
+            <video autoplay muted loop playsinline controls>
+              <source src="video/chole/ood/OOD_example_3.mp4" type="video/mp4" />
+            </video>
+            <!-- cosmos_wild_kinematics_20251006_063019.log -->
+            <!-- 2B_run_20251006_063025_generated_jhu_episode_2_2_clipping_first_clip_left_tube_recovery_video_repeat_action_15.mp4-->
+            <p class="video-caption">Right Arm ↗️ x252<br>(Push right arm into the liver)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3 has-text-centered">Citation</h2>
+      <div class="content">
+        <pre><code>
+@misc{zbinden2025cosmossurgdvrk,
+  title={Cosmos-Surg-dVRK: World Foundation Model-based Automated Online Evaluation of Surgical Robot Policy Learning}, 
+  author={Lukas Zbinden and Nigel Nelson and Juo-Tung Chen and Xinhao Chen and Ji Woong Kim and Mahdi Azizian and Axel Krieger and Sean Huver},
+  year={2025},
+  eprint={2510.16240},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2510.16240}, 
+}
+        </code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-one-half">
+          <div class="contact-card">
+            <h2 class="title is-3">Contact</h2>
+            <p class="is-size-5">
+              For any questions, please feel free to contact Lukas Zbinden and Nigel Nelson.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Cosmos-Surg-dVRK: World foundation model-based automated online evaluation of surgical robot policy learning
+        </p>
+        <p>
+           <a href="https://arxiv.org/pdf/2510.16240" class="button is-small is-dark">
+            <span class="icon">
+               <i class="fa-solid fa-file-pdf"></i>
+            </span>
+            <span>Download Paper</span>
+          </a>
+        </p>
+        <p class="is-size-7">
+          This website template was adapted from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      burgers.forEach(function (burger) {
+        burger.addEventListener('click', function () {
+          var navbar = burger.closest('.navbar');
+          var menu = navbar ? navbar.querySelector('.navbar-menu') : null;
+          burger.classList.toggle('is-active');
+          if (menu) {
+            menu.classList.toggle('is-active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
